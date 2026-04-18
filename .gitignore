@@ -1,0 +1,23 @@
+# Build outputs
+dist/
+bin/
+obj/
+
+# Dependencies
+node_modules/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Claude memory (local only)
+.claude/
