@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "None",
+    "outFile": "dist/app.js",
+    "strict": true,
+    "noEmitOnError": true,
+    "ignoreDeprecations": "6.0"
+  },
+  "files": [
+    "Abstract Products/IAlertNotifier.ts",
+    "Abstract Products/IEmailReceipt.ts",
+    "Abstract Products/IDashboardWidget.ts",
+    "Concrete Products/Homeowner/SmsStyleAlert.ts",
+    "Concrete Products/Homeowner/SimpleEmailReceipt.ts",
+    "Concrete Products/Homeowner/MobileStatusCard.ts",
+    "Concrete Products/Business/FormalSystemAlert.ts",
+    "Concrete Products/Business/InvoiceEmailReceipt.ts",
+    "Concrete Products/Business/AdminSummaryWidget.ts",
+    "Abstract Factory/IClientNotificationFactory.ts",
+    "Concrete Factories/HomeownerNotificationFactory.ts",
+    "Concrete Factories/BusinessNotificationFactory.ts",
+    "JobDispatcher.ts",
+    "App.ts"
+  ]
+}
