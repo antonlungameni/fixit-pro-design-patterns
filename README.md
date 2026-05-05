@@ -40,7 +40,18 @@ Each episode folder contains a self-contained, runnable project.
 
 ## Running the Examples
 
-### C# (.NET 10)
+Each episode is a self-contained project. Pick the pattern you want to explore and follow the steps for your language.
+
+### Prerequisites
+
+| Language | What you need |
+| --- | --- |
+| C# | [.NET 10 SDK](https://dotnet.microsoft.com/download) |
+| TypeScript | [Node.js](https://nodejs.org) and [pnpm](https://pnpm.io/installation) (`npm install -g pnpm`) |
+
+### C\#
+
+Navigate into any episode folder and run it with a single command — .NET handles the rest.
 
 ```bash
 cd csharp/Creational/01-FactoryMethod
@@ -49,12 +60,16 @@ dotnet run
 
 ### TypeScript
 
+Install dependencies first (only needed once per episode), then build and run.
+
 ```bash
 cd typescript/Creational/01-FactoryMethod
-pnpm install
-pnpm tsc
-node dist/app.js
+pnpm install   # downloads typescript into node_modules
+pnpm build     # compiles .ts files to dist/
+pnpm start     # runs the compiled output with Node
 ```
+
+> Swap `01-FactoryMethod` for any other episode folder — the steps are identical.
 
 ---
 
