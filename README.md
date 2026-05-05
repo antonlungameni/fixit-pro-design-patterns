@@ -8,16 +8,18 @@ Every pattern is implemented in both **C#** and **TypeScript** side-by-side, so 
 
 ## Structure
 
-```
+```text
 fixit-pro-design-patterns/
 ├── csharp/
 │   └── Creational/
 │       ├── 01-FactoryMethod/
-│       └── 02-AbstractFactory/
+│       ├── 02-AbstractFactory/
+│       └── 03-Builder/
 └── typescript/
     └── Creational/
         ├── 01-FactoryMethod/
-        └── 02-AbstractFactory/
+        ├── 02-AbstractFactory/
+        └── 03-Builder/
 ```
 
 Each episode folder contains a self-contained, runnable project.
@@ -29,10 +31,10 @@ Each episode folder contains a self-contained, runnable project.
 ### Creational Patterns
 
 | # | Pattern | FixIt Pro Scenario | C# | TypeScript |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | 01 | [Factory Method](https://lungameni.dev/blog/design-patterns-1) | Creating typed job cards (Plumbing, Electrical, Carpentry) without coupling to concrete classes | `csharp/Creational/01-FactoryMethod` | `typescript/Creational/01-FactoryMethod` |
 | 02 | [Abstract Factory](https://lungameni.dev/blog/design-patterns-2) | Building notification kits (alert + email + dashboard widget) for Homeowner vs Business clients | `csharp/Creational/02-AbstractFactory` | `typescript/Creational/02-AbstractFactory` |
-| 03 | Builder | _(coming soon)_ Constructing complex `JobCard` objects step by step | | |
+| 03 | Builder | Constructing complex `JobCard` objects step by step with optional parts, scheduling, and instructions | `csharp/Creational/03-Builder` | `typescript/Creational/03-Builder` |
 
 ---
 
