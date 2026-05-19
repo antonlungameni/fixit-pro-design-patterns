@@ -21,7 +21,9 @@ console.log(`  ${urgentJob.description}`);
 console.log(`  Cost: N$${urgentJob.cost.toFixed(2)}`);
 urgentJob.execute();
 
-const urgentInsuredJob: IJobCard = new InsuredDecorator(new UrgentDecorator(job));
+const urgentInsuredJob: IJobCard = new InsuredDecorator(
+  new UrgentDecorator(job),
+);
 console.log("\n=== + Urgent + Insured ===");
 console.log(`  ${urgentInsuredJob.description}`);
 console.log(`  Cost: N$${urgentInsuredJob.cost.toFixed(2)}`);
