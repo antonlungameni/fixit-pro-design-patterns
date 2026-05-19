@@ -1,0 +1,12 @@
+{
+  "name": "flyweight",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/App.js"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  }
+}
