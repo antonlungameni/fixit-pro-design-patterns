@@ -14,12 +14,14 @@ fixit-pro-design-patterns/
 │   └── Creational/
 │       ├── 01-FactoryMethod/
 │       ├── 02-AbstractFactory/
-│       └── 03-Builder/
+│       ├── 03-Builder/
+│       └── 04-Prototype/
 └── typescript/
     └── Creational/
         ├── 01-FactoryMethod/
         ├── 02-AbstractFactory/
-        └── 03-Builder/
+        ├── 03-Builder/
+        └── 04-Prototype/
 ```
 
 Each episode folder contains a self-contained, runnable project.
@@ -35,6 +37,7 @@ Each episode folder contains a self-contained, runnable project.
 | 01 | [Factory Method](https://lungameni.dev/blog/design-patterns-1) | Creating typed job cards (Plumbing, Electrical, Carpentry) without coupling to concrete classes | `csharp/Creational/01-FactoryMethod` | `typescript/Creational/01-FactoryMethod` |
 | 02 | [Abstract Factory](https://lungameni.dev/blog/design-patterns-2) | Building notification kits (alert + email + dashboard widget) for Homeowner vs Business clients | `csharp/Creational/02-AbstractFactory` | `typescript/Creational/02-AbstractFactory` |
 | 03 | [Builder](https://lungameni.dev/blog/design-patterns-3) | Constructing complex `JobCard` objects step by step with optional parts, scheduling, and instructions | `csharp/Creational/03-Builder` | `typescript/Creational/03-Builder` |
+| 04 | [Prototype](https://lungameni.dev/blog/design-patterns-4) | Cloning recurring job card templates for monthly boiler services and weekly fire inspections without rebuilding from scratch | `csharp/Creational/04-Prototype` | `typescript/Creational/04-Prototype` |
 
 ---
 

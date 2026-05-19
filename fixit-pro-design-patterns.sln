@@ -10,6 +10,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-FactoryMethod", "01-Fact
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "csharp\Creational\01-FactoryMethod\FactoryMethod.csproj", "{F42DEE5B-5F7C-F97C-FCC2-16984F49AA56}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04-Prototype", "04-Prototype", "{8E9E632C-DF33-464A-B192-54A437CCA79E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototype", "csharp\Creational\04-Prototype\Prototype.csproj", "{73EC2D88-6914-4BC4-A6BB-FEB30B8EF8B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +24,10 @@ Global
 		{F42DEE5B-5F7C-F97C-FCC2-16984F49AA56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F42DEE5B-5F7C-F97C-FCC2-16984F49AA56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F42DEE5B-5F7C-F97C-FCC2-16984F49AA56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73EC2D88-6914-4BC4-A6BB-FEB30B8EF8B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73EC2D88-6914-4BC4-A6BB-FEB30B8EF8B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73EC2D88-6914-4BC4-A6BB-FEB30B8EF8B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73EC2D88-6914-4BC4-A6BB-FEB30B8EF8B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -28,6 +36,8 @@ Global
 		{C3E279EE-80AA-35EE-6451-8321436AC980} = {B41BF331-FCCB-2ADF-CDB6-767964B34647}
 		{70203358-26B7-35EB-2642-4F0D02594E98} = {C3E279EE-80AA-35EE-6451-8321436AC980}
 		{F42DEE5B-5F7C-F97C-FCC2-16984F49AA56} = {70203358-26B7-35EB-2642-4F0D02594E98}
+		{8E9E632C-DF33-464A-B192-54A437CCA79E} = {C3E279EE-80AA-35EE-6451-8321436AC980}
+		{73EC2D88-6914-4BC4-A6BB-FEB30B8EF8B5} = {8E9E632C-DF33-464A-B192-54A437CCA79E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A8867656-BB84-425B-A5CA-70B5A97DCC4C}
