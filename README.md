@@ -18,7 +18,8 @@ fixit-pro-design-patterns/
 │   │   ├── 04-Prototype/
 │   │   └── 05-Singleton/
 │   └── Structural/
-│       └── 06-Adapter/
+│       ├── 06-Adapter/
+│       └── 07-Bridge/
 └── typescript/
     ├── Creational/
     │   ├── 01-FactoryMethod/
@@ -27,7 +28,8 @@ fixit-pro-design-patterns/
     │   ├── 04-Prototype/
     │   └── 05-Singleton/
     └── Structural/
-        └── 06-Adapter/
+        ├── 06-Adapter/
+        └── 07-Bridge/
 ```
 
 Each episode folder contains a self-contained, runnable project.
@@ -53,6 +55,7 @@ Each episode folder contains a self-contained, runnable project.
 | # | Pattern | FixIt Pro Scenario | C# | TypeScript |
 | --- | --- | --- | --- | --- |
 | 06 | [Adapter](https://lungameni.dev/blog/design-patterns-6) | Bridging a legacy `LegacySmsGateway` into the modern `INotifier` interface without touching the legacy class | `csharp/Structural/06-Adapter` | `typescript/Structural/06-Adapter` |
+| 07 | [Bridge](https://lungameni.dev/blog/design-patterns-7) | Decoupling notification urgency levels (Normal, High, Urgent) from delivery channels (Email, SMS, Push, WhatsApp) to avoid a class-explosion matrix | `csharp/Structural/07-Bridge` | `typescript/Structural/07-Bridge` |
 
 ---
 
