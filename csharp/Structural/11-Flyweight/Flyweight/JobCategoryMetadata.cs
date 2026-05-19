@@ -1,20 +1,20 @@
 public sealed class JobCategoryMetadata
 {
-    public string   Category         { get; }
+    public string Category { get; }
     public string[] ToolRequirements { get; }
-    public string[] SafetyChecklist  { get; }
-    public string   RegulatoryNote   { get; }
+    public string[] SafetyChecklist { get; }
+    public string RegulatoryNote { get; }
 
     public JobCategoryMetadata(
-        string   category,
+        string category,
         string[] toolRequirements,
         string[] safetyChecklist,
-        string   regulatoryNote)
+        string regulatoryNote)
     {
-        Category         = category;
+        Category = category;
         ToolRequirements = toolRequirements;
-        SafetyChecklist  = safetyChecklist;
-        RegulatoryNote   = regulatoryNote;
+        SafetyChecklist = safetyChecklist;
+        RegulatoryNote = regulatoryNote;
     }
 
     public void PrintMetadata()

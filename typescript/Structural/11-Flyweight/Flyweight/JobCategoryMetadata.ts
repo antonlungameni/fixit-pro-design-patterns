@@ -1,9 +1,9 @@
 export class JobCategoryMetadata {
   constructor(
-    readonly category:         string,
+    readonly category: string,
     readonly toolRequirements: string[],
-    readonly safetyChecklist:  string[],
-    readonly regulatoryNote:   string
+    readonly safetyChecklist: string[],
+    readonly regulatoryNote: string,
   ) {}
 
   printMetadata(): void {

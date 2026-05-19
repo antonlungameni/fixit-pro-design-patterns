@@ -1,17 +1,17 @@
 public class JobCard
 {
-    public string   JobId       { get; } = Guid.NewGuid().ToString()[..8];
-    public string   ClientRef   { get; }
+    public string JobId { get; } = Guid.NewGuid().ToString()[..8];
+    public string ClientRef { get; }
     public DateTime ScheduledAt { get; }
-    public string   Status      { get; set; } = "Active";
+    public string Status { get; set; } = "Active";
 
     private readonly JobCategoryMetadata _metadata;
 
     public JobCard(string clientRef, DateTime scheduledAt, string category)
     {
-        ClientRef   = clientRef;
+        ClientRef = clientRef;
         ScheduledAt = scheduledAt;
-        _metadata   = JobCategoryFactory.GetMetadata(category);
+        _metadata = JobCategoryFactory.GetMetadata(category);
     }
 
     public void PrintSummary()
