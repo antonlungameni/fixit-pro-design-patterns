@@ -20,7 +20,8 @@ fixit-pro-design-patterns/
 │   └── Structural/
 │       ├── 06-Adapter/
 │       ├── 07-Bridge/
-│       └── 08-Composite/
+│       ├── 08-Composite/
+│       └── 09-Decorator/
 └── typescript/
     ├── Creational/
     │   ├── 01-FactoryMethod/
@@ -31,7 +32,8 @@ fixit-pro-design-patterns/
     └── Structural/
         ├── 06-Adapter/
         ├── 07-Bridge/
-        └── 08-Composite/
+        ├── 08-Composite/
+        └── 09-Decorator/
 ```
 
 Each episode folder contains a self-contained, runnable project.
@@ -59,6 +61,7 @@ Each episode folder contains a self-contained, runnable project.
 | 06 | [Adapter](https://lungameni.dev/blog/design-patterns-6) | Bridging a legacy `LegacySmsGateway` into the modern `INotifier` interface without touching the legacy class | `csharp/Structural/06-Adapter` | `typescript/Structural/06-Adapter` |
 | 07 | [Bridge](https://lungameni.dev/blog/design-patterns-7) | Decoupling notification urgency levels (Normal, High, Urgent) from delivery channels (Email, SMS, Push, WhatsApp) to avoid a class-explosion matrix | `csharp/Structural/07-Bridge` | `typescript/Structural/07-Bridge` |
 | 08 | [Composite](https://lungameni.dev/blog/design-patterns-8) | Treating a single `JobCard` and a nested `CompoundJob` (Full Kitchen Renovation → Countertop Installation → leaf jobs) through the same `IJobComponent` interface | `csharp/Structural/08-Composite` | `typescript/Structural/08-Composite` |
+| 09 | [Decorator](https://lungameni.dev/blog/design-patterns-9) | Stacking `UrgentDecorator`, `InsuredDecorator`, and `WarrantiedDecorator` around a base `JobCard` at runtime — avoiding exponential subclass explosion | `csharp/Structural/09-Decorator` | `typescript/Structural/09-Decorator` |
 
 ---
 
