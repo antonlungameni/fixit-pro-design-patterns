@@ -5,11 +5,11 @@
 public class SmsNotifierAdapter : INotifier
 {
     private readonly LegacySmsGateway _gateway;
-    private readonly string           _phoneNumber;
+    private readonly string _phoneNumber;
 
     public SmsNotifierAdapter(LegacySmsGateway gateway, string phoneNumber)
     {
-        _gateway     = gateway;
+        _gateway = gateway;
         _phoneNumber = phoneNumber;
     }
 

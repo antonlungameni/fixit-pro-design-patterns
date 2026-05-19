@@ -7,6 +7,9 @@ export class JobDispatcher {
     console.log(`\n--- Dispatching Job #${jobId}: ${title} ---`);
 
     for (const notifier of this.notifiers)
-      notifier.sendNotification(jobId, `Your job '${title}' has been assigned.`);
+      notifier.sendNotification(
+        jobId,
+        `Your job '${title}' has been assigned.`,
+      );
   }
 }
