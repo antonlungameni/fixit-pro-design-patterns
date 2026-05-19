@@ -11,19 +11,23 @@ Every pattern is implemented in both **C#** and **TypeScript** side-by-side, so 
 ```text
 fixit-pro-design-patterns/
 ├── csharp/
-│   └── Creational/
-│       ├── 01-FactoryMethod/
-│       ├── 02-AbstractFactory/
-│       ├── 03-Builder/
-│       ├── 04-Prototype/
-│       └── 05-Singleton/
+│   ├── Creational/
+│   │   ├── 01-FactoryMethod/
+│   │   ├── 02-AbstractFactory/
+│   │   ├── 03-Builder/
+│   │   ├── 04-Prototype/
+│   │   └── 05-Singleton/
+│   └── Structural/
+│       └── 06-Adapter/
 └── typescript/
-    └── Creational/
-        ├── 01-FactoryMethod/
-        ├── 02-AbstractFactory/
-        ├── 03-Builder/
-        ├── 04-Prototype/
-        └── 05-Singleton/
+    ├── Creational/
+    │   ├── 01-FactoryMethod/
+    │   ├── 02-AbstractFactory/
+    │   ├── 03-Builder/
+    │   ├── 04-Prototype/
+    │   └── 05-Singleton/
+    └── Structural/
+        └── 06-Adapter/
 ```
 
 Each episode folder contains a self-contained, runnable project.
@@ -41,6 +45,14 @@ Each episode folder contains a self-contained, runnable project.
 | 03 | [Builder](https://lungameni.dev/blog/design-patterns-3) | Constructing complex `JobCard` objects step by step with optional parts, scheduling, and instructions | `csharp/Creational/03-Builder` | `typescript/Creational/03-Builder` |
 | 04 | [Prototype](https://lungameni.dev/blog/design-patterns-4) | Cloning recurring job card templates for monthly boiler services and weekly fire inspections without rebuilding from scratch | `csharp/Creational/04-Prototype` | `typescript/Creational/04-Prototype` |
 | 05 | [Singleton](https://lungameni.dev/blog/design-patterns-5) | One `JobCardRegistry` shared across dispatcher, billing, and reporting — ensuring a single, consistent store of active jobs | `csharp/Creational/05-Singleton` | `typescript/Creational/05-Singleton` |
+
+---
+
+### Structural Patterns
+
+| # | Pattern | FixIt Pro Scenario | C# | TypeScript |
+| --- | --- | --- | --- | --- |
+| 06 | [Adapter](https://lungameni.dev/blog/design-patterns-6) | Bridging a legacy `LegacySmsGateway` into the modern `INotifier` interface without touching the legacy class | `csharp/Structural/06-Adapter` | `typescript/Structural/06-Adapter` |
 
 ---
 
