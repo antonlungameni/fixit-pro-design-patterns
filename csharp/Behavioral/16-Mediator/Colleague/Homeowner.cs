@@ -9,9 +9,9 @@ public class Homeowner : Colleague
 
         Mediator.Notify(this, "JobRequested", new
         {
-            Title    = jobTitle,
+            Title = jobTitle,
             Category = category,
-            Client   = Name
+            Client = Name
         });
     }
 

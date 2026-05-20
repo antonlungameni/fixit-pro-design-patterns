@@ -1,9 +1,9 @@
 var center = new DispatchCenter();
 
-var homeowner = new Homeowner(center,   "Sarah Ndapewa");
-var handyman  = new Handyman(center,    "James Nghipandua", "Plumbing");
+var homeowner = new Homeowner(center, "Sarah Ndapewa");
+var handyman = new Handyman(center, "James Nghipandua", "Plumbing");
 var scheduler = new Scheduler(center);
-var billing   = new BillingService(center);
+var billing = new BillingService(center);
 
 center.Register(homeowner);
 center.Register(handyman);

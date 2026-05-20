@@ -1,14 +1,14 @@
 public class DispatchCenter : IDispatchMediator
 {
-    private Homeowner?      _homeowner;
-    private Handyman?       _handyman;
-    private Scheduler?      _scheduler;
+    private Homeowner? _homeowner;
+    private Handyman? _handyman;
+    private Scheduler? _scheduler;
     private BillingService? _billing;
 
-    public void Register(Homeowner      homeowner) => _homeowner = homeowner;
-    public void Register(Handyman       handyman)  => _handyman  = handyman;
-    public void Register(Scheduler      scheduler) => _scheduler = scheduler;
-    public void Register(BillingService billing)   => _billing   = billing;
+    public void Register(Homeowner homeowner) => _homeowner = homeowner;
+    public void Register(Handyman handyman) => _handyman = handyman;
+    public void Register(Scheduler scheduler) => _scheduler = scheduler;
+    public void Register(BillingService billing) => _billing = billing;
 
     public void Notify(object sender, string eventName, object? data = null)
     {
@@ -38,6 +38,6 @@ public class DispatchCenter : IDispatchMediator
     private static string GetName(object sender) => sender switch
     {
         Colleague c => c.Name,
-        _           => sender.GetType().Name
+        _ => sender.GetType().Name
     };
 }

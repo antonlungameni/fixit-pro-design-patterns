@@ -29,11 +29,8 @@ export class DispatchCenter implements IDispatchMediator {
     eventName: string,
     data: Record<string, unknown> = {},
   ): void {
-    const senderName =
-      sender instanceof Colleague ? sender.name : "Unknown";
-    console.log(
-      `  [DispatchCenter] Event: '${eventName}' from ${senderName}`,
-    );
+    const senderName = sender instanceof Colleague ? sender.name : "Unknown";
+    console.log(`  [DispatchCenter] Event: '${eventName}' from ${senderName}`);
 
     switch (eventName) {
       case "JobRequested": {
