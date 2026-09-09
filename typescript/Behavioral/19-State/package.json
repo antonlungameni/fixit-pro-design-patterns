@@ -1,0 +1,13 @@
+{
+  "name": "state",
+  "version": "1.0.0",
+  "description": "State pattern demo",
+  "main": "dist/App.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/App.js"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  }
+}
