@@ -32,7 +32,8 @@ fixit-pro-design-patterns/
 │       ├── 16-Mediator/
 │       ├── 17-Memento/
 │       ├── 18-Observer/
-│       └── 19-State/
+│       ├── 19-State/
+│       └── 20-Strategy/
 └── typescript/
     ├── Creational/
     │   ├── 01-FactoryMethod/
@@ -55,7 +56,8 @@ fixit-pro-design-patterns/
         ├── 16-Mediator/
         ├── 17-Memento/
         ├── 18-Observer/
-        └── 19-State/
+        ├── 19-State/
+        └── 20-Strategy/
 ```
 
 Each episode folder contains a self-contained, runnable project.
@@ -101,6 +103,7 @@ Each episode folder contains a self-contained, runnable project.
 | 17 | [Memento](https://lungameni.dev/blog/design-patterns-17) | Snapshotting a `JobCard` before each edit so a `JobCardHistory` caretaker can undo an accidental pause or cost change — without exposing the job card's internals | `csharp/Behavioral/17-Memento` | `typescript/Behavioral/17-Memento` |
 | 18 | [Observer](https://lungameni.dev/blog/design-patterns-18) | Broadcasting every job card status change to `HomeownerNotifier`, `SupervisorAlert`, `BillingService`, and `AuditLog` — with observers free to unsubscribe mid-job | `csharp/Behavioral/18-Observer` | `typescript/Behavioral/18-Observer` |
 | 19 | [State](https://lungameni.dev/blog/design-patterns-19) | Moving a job card through Draft → Assigned → InProgress → Paused → PendingReview → Closed, with each state class owning its own valid transitions instead of one giant conditional | `csharp/Behavioral/19-State` | `typescript/Behavioral/19-State` |
+| 20 | [Strategy](https://lungameni.dev/blog/design-patterns-20) | Swapping Fixed Rate, Hourly Rate, Emergency Surcharge, and Contract Rate pricing on a `BillingService` at runtime — the surcharge and discount strategies wrap another strategy, so they compose | `csharp/Behavioral/20-Strategy` | `typescript/Behavioral/20-Strategy` |
 
 ---
 
