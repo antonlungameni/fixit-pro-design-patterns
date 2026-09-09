@@ -34,7 +34,8 @@ fixit-pro-design-patterns/
 │       ├── 18-Observer/
 │       ├── 19-State/
 │       ├── 20-Strategy/
-│       └── 21-TemplateMethod/
+│       ├── 21-TemplateMethod/
+│       └── 22-Visitor/
 └── typescript/
     ├── Creational/
     │   ├── 01-FactoryMethod/
@@ -59,7 +60,8 @@ fixit-pro-design-patterns/
         ├── 18-Observer/
         ├── 19-State/
         ├── 20-Strategy/
-        └── 21-TemplateMethod/
+        ├── 21-TemplateMethod/
+        └── 22-Visitor/
 ```
 
 Each episode folder contains a self-contained, runnable project.
@@ -107,6 +109,7 @@ Each episode folder contains a self-contained, runnable project.
 | 19 | [State](https://lungameni.dev/blog/design-patterns-19) | Moving a job card through Draft → Assigned → InProgress → Paused → PendingReview → Closed, with each state class owning its own valid transitions instead of one giant conditional | `csharp/Behavioral/19-State` | `typescript/Behavioral/19-State` |
 | 20 | [Strategy](https://lungameni.dev/blog/design-patterns-20) | Swapping Fixed Rate, Hourly Rate, Emergency Surcharge, and Contract Rate pricing on a `BillingService` at runtime — the surcharge and discount strategies wrap another strategy, so they compose | `csharp/Behavioral/20-Strategy` | `typescript/Behavioral/20-Strategy` |
 | 21 | [Template Method](https://lungameni.dev/blog/design-patterns-21) | Fixing the inspection report sequence — open, verify safety, inspect, record findings, attach compliance, sign off — in a base `JobInspectionReport`, while Plumbing, Electrical, and Carpentry fill in the trade-specific steps | `csharp/Behavioral/21-TemplateMethod` | `typescript/Behavioral/21-TemplateMethod` |
+| 22 | [Visitor](https://lungameni.dev/blog/design-patterns-22) | Running cost rollup, PDF export, and compliance audit over a mixed list of Plumbing, Electrical, and Carpentry jobs — each operation is one new visitor class, and no job class is ever touched | `csharp/Behavioral/22-Visitor` | `typescript/Behavioral/22-Visitor` |
 
 ---
 
