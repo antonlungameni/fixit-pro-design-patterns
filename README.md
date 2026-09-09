@@ -17,12 +17,22 @@ fixit-pro-design-patterns/
 │   │   ├── 03-Builder/
 │   │   ├── 04-Prototype/
 │   │   └── 05-Singleton/
-│   └── Structural/
-│       ├── 06-Adapter/
-│       ├── 07-Bridge/
-│       ├── 08-Composite/
-│       ├── 09-Decorator/
-│       └── 10-Facade/
+│   ├── Structural/
+│   │   ├── 06-Adapter/
+│   │   ├── 07-Bridge/
+│   │   ├── 08-Composite/
+│   │   ├── 09-Decorator/
+│   │   ├── 10-Facade/
+│   │   ├── 11-Flyweight/
+│   │   └── 12-Proxy/
+│   └── Behavioral/
+│       ├── 13-ChainOfResponsibility/
+│       ├── 14-Command/
+│       ├── 15-Iterator/
+│       ├── 16-Mediator/
+│       ├── 17-Memento/
+│       ├── 18-Observer/
+│       └── 19-State/
 └── typescript/
     ├── Creational/
     │   ├── 01-FactoryMethod/
@@ -30,12 +40,22 @@ fixit-pro-design-patterns/
     │   ├── 03-Builder/
     │   ├── 04-Prototype/
     │   └── 05-Singleton/
-    └── Structural/
-        ├── 06-Adapter/
-        ├── 07-Bridge/
-        ├── 08-Composite/
-        ├── 09-Decorator/
-        └── 10-Facade/
+    ├── Structural/
+    │   ├── 06-Adapter/
+    │   ├── 07-Bridge/
+    │   ├── 08-Composite/
+    │   ├── 09-Decorator/
+    │   ├── 10-Facade/
+    │   ├── 11-Flyweight/
+    │   └── 12-Proxy/
+    └── Behavioral/
+        ├── 13-ChainOfResponsibility/
+        ├── 14-Command/
+        ├── 15-Iterator/
+        ├── 16-Mediator/
+        ├── 17-Memento/
+        ├── 18-Observer/
+        └── 19-State/
 ```
 
 Each episode folder contains a self-contained, runnable project.
@@ -65,6 +85,22 @@ Each episode folder contains a self-contained, runnable project.
 | 08 | [Composite](https://lungameni.dev/blog/design-patterns-8) | Treating a single `JobCard` and a nested `CompoundJob` (Full Kitchen Renovation → Countertop Installation → leaf jobs) through the same `IJobComponent` interface | `csharp/Structural/08-Composite` | `typescript/Structural/08-Composite` |
 | 09 | [Decorator](https://lungameni.dev/blog/design-patterns-9) | Stacking `UrgentDecorator`, `InsuredDecorator`, and `WarrantiedDecorator` around a base `JobCard` at runtime — avoiding exponential subclass explosion | `csharp/Structural/09-Decorator` | `typescript/Structural/09-Decorator` |
 | 10 | [Facade](https://lungameni.dev/blog/design-patterns-10) | Hiding `Scheduler`, `HandymanAssigner`, `NotificationService`, `JobCardRegistry`, and `BillingService` behind a single `JobDispatchFacade.DispatchJob()` call | `csharp/Structural/10-Facade` | `typescript/Structural/10-Facade` |
+| 11 | [Flyweight](https://lungameni.dev/blog/design-patterns-11) | Sharing one immutable `JobCategoryMetadata` (tools, safety checklist, regulatory note) per category across every job card, instead of duplicating it on each one | `csharp/Structural/11-Flyweight` | `typescript/Structural/11-Flyweight` |
+| 12 | [Proxy](https://lungameni.dev/blog/design-patterns-12) | Guarding `JobCardRegistry` behind a `JobCardAccessProxy` that checks handyman certifications, plus a lazy virtual proxy that defers loading the real registry until first use | `csharp/Structural/12-Proxy` | `typescript/Structural/12-Proxy` |
+
+---
+
+### Behavioral Patterns
+
+| # | Pattern | FixIt Pro Scenario | C# | TypeScript |
+| --- | --- | --- | --- | --- |
+| 13 | [Chain of Responsibility](https://lungameni.dev/blog/design-patterns-13) | Escalating job approvals by cost up a chain of Handyman → Supervisor → Manager → Director, each handler approving within its own limit or passing the request on | `csharp/Behavioral/13-ChainOfResponsibility` | `typescript/Behavioral/13-ChainOfResponsibility` |
+| 14 | [Command](https://lungameni.dev/blog/design-patterns-14) | Turning assign, pause, complete, and cancel into objects a `JobActionInvoker` can queue, execute, and undo — including a `MacroCommand` that runs several as one | `csharp/Behavioral/14-Command` | `typescript/Behavioral/14-Command` |
+| 15 | [Iterator](https://lungameni.dev/blog/design-patterns-15) | Walking a `HandymanJobQueue` in priority order through a hand-written `PriorityJobIterator`, then again through the language's native `IEnumerable<T>` / `Symbol.iterator` protocol | `csharp/Behavioral/15-Iterator` | `typescript/Behavioral/15-Iterator` |
+| 16 | [Mediator](https://lungameni.dev/blog/design-patterns-16) | Routing `JobRequested` and `JobCompleted` events through a `DispatchCenter` so Homeowner, Handyman, Scheduler, and BillingService never hold references to each other | `csharp/Behavioral/16-Mediator` | `typescript/Behavioral/16-Mediator` |
+| 17 | [Memento](https://lungameni.dev/blog/design-patterns-17) | Snapshotting a `JobCard` before each edit so a `JobCardHistory` caretaker can undo an accidental pause or cost change — without exposing the job card's internals | `csharp/Behavioral/17-Memento` | `typescript/Behavioral/17-Memento` |
+| 18 | [Observer](https://lungameni.dev/blog/design-patterns-18) | Broadcasting every job card status change to `HomeownerNotifier`, `SupervisorAlert`, `BillingService`, and `AuditLog` — with observers free to unsubscribe mid-job | `csharp/Behavioral/18-Observer` | `typescript/Behavioral/18-Observer` |
+| 19 | [State](https://lungameni.dev/blog/design-patterns-19) | Moving a job card through Draft → Assigned → InProgress → Paused → PendingReview → Closed, with each state class owning its own valid transitions instead of one giant conditional | `csharp/Behavioral/19-State` | `typescript/Behavioral/19-State` |
 
 ---
 
